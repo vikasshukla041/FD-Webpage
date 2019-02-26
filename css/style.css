@@ -1,0 +1,375 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+}
+nav {
+    background: grey;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index:  1;
+}
+input[type=checkbox] {
+    display: none;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    opacity: 0.6;
+}
+
+.company-tag img {
+    height: 80px;
+    width: 100px;
+}
+.label label {
+    padding-right: 20px;
+}
+.search-button {
+    padding: 10px;
+}
+.label {
+    font-weight: bold;
+}
+.icon-buttons {
+    display: none;
+}
+.header {
+    padding-top: 50px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    background: white;
+}
+.heading {
+    display: flex;
+    color: red;
+    font-size: 80px;
+    margin: 0px;
+    padding-left: 30px;
+    justify-content: center;
+}
+.heading, .heading-two {
+    width: 50%
+}
+.heading-two {
+    color: grey;
+    font-size: 20px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    color: grey;
+}
+.button-one {
+    border-radius: 5px;
+    padding: 7px;
+    margin-right: 20px;
+}
+.button-two {
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.wrapper {
+    border: 15px solid white;
+}
+.col-6 {
+    width: 50%;
+}
+.col-3 {
+    width: 25%;
+}
+
+.image img {
+    width: 100%;
+    box-shadow: 0px 17px 10px -15px #111;
+}
+
+
+.content  {
+    padding: 5px;
+    border: 1px solid rgb(196, 194, 194);
+}
+/* .contentthree {
+    position: relative;
+} */
+/* .text-block {
+    position: absolute;
+    width: 254px;
+    height: 152px;
+    background-color: black;
+    color: white;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.6;
+} */
+
+.logo {
+    color: red;
+}
+.social-link img {
+    width: 25px;
+    height: 25px;
+    opacity: 0.7;
+    margin: 0px 10px;
+}
+
+.different-image  {
+    background-image: url("https://factordaily.com/wp-content/uploads/2018/11/Walmart_Flipkart-1111x625.jpg");
+    background-size: cover;
+}
+.different-image .image {
+    display: none;
+}
+.diferent-imagetwo {
+    background-image: url("https://factordaily.com/wp-content/uploads/2018/11/Rajiv-Rastogi-Lead-3-1111x625.jpg");
+    background-size: cover;
+}
+.diferent-imagetwo .image {
+    display: none;
+}
+.different-imagethree {
+    background-image: url("https://factordaily.com/wp-content/uploads/2018/10/ecom-Lead-233x132.gif");
+    background-size: cover;
+}
+.different-imagethree .image {
+    display: none;
+}
+.contentthree {
+    padding: 50px 10px 70px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+.contentthree .social-link {
+    color: grey;
+}
+.contentfive {
+    padding: 30px 10px 60px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+.paragraph {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.burger {
+    display: none;
+}
+
+
+@media screen and (min-width : 640px) and (max-width :1024px) {
+    .col-6 {
+        width: 100%;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+        font-size: 24px;
+    }
+    /* .content, .name, h3 {
+        line-height: 100%;
+    } */
+    .header {
+        width: 100%;
+    }
+    .heading-two {
+        width: 45%;
+    }
+    .heading {
+        width: 60%;
+    }
+    .icon-buttons {
+        display: none;
+    }
+    .burger {
+        display: none;
+    }
+}
+
+@media screen and (max-width : 640px) {
+    .burger {
+        display: block;
+    }
+    .social-media img {
+        height: 20px;
+        width: 20px;
+        opacity: 0.5;
+    }
+    .icon-buttons  {
+        display: block;
+        background: grey;
+    }
+    .btn {
+        background: grey;
+        border: none;
+        padding: 10px;
+    }
+    .header {
+        display: block;
+        margin: auto;
+    }
+    .heading {
+        width: 100%;
+        font-size: 30px;
+    }
+    .heading-two {
+        width: 100%;
+        font-weight: lighter;
+    }
+    .wrapper {
+        border: none;
+        border-bottom: 1px solid grey;
+    }
+    .container {
+        width: 100%;
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+    }
+    .col-6 {
+        width: 100%;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .image img {
+        width: 30%;
+        position: absolute;
+        right: 10px;
+        padding-top: 50px;
+    }
+    /* .extra-image {
+        width:  30%;
+        position: absolute;
+        right: 10px;
+        padding-top: 20px;
+    } */
+    .paragraph {
+        display: none;
+    }
+    .content {
+        width: 65%;
+        margin-left: 0px;
+        border: none;
+    }
+    .social-link img {
+        margin: 0px 10px;
+        color: black;
+    }
+    .contentthree {
+        padding: 0px;
+        width: 70%;
+        background: none;
+        color: black;
+    }
+    .contentfive {
+        background: none;
+        color: black;
+        padding: 0px;
+    }
+    .different-image {
+        background-image: none;
+    }
+    .different-image .image {
+        display: block;
+    }
+    .diferent-imagetwo .image {
+        display: block;
+    }
+    .different-imagethree .image {
+        display: block;
+    }
+    .diferent-imagetwo {
+        background-image: none;
+    }
+    .different-imagethree {
+        background-image: none;
+    }
+    .content, h3 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        padding: 2px 8px;
+    }
+    .social-media a:nth-child(2), a:nth-child(3) {
+        display: none;
+    }
+    .ssbuttons, .search-button {
+        display: none;
+    }
+    .content p {
+        margin: 10px 0px;
+    }
+    .contentthree img {
+        color: black;
+        background: black;
+    }
+    input[type=checkbox]{
+        visibility: hidden;
+    }
+    input[type=checkbox]:checked ~ .label-mobile {
+        transform: translateX(0);
+
+    }
+    .label {
+        display: none;
+        /* width: 10%;
+        height: 10%;
+        background: black;
+        opacity: 0.5; */
+    }
+    .menu-bar div {
+        margin : 0;
+        display : block;
+        width : 30px;
+        height : 3px;
+        background-color : black;
+        margin : 5px;
+    }
+    
+    .label-mobile {
+        background: black;
+        opacity: 0.9;
+        color: white;
+        width: 100%;
+        height: 100%;
+        transform: translateX(-500px);
+        transition: all 0.3s ease-in-out;
+        position: fixed;
+        top: 50px;
+        left: 0;
+    }
+    .label-mobile a {
+        display: block;
+        color: white;
+        font-size: 40px;
+        padding: 0px 50px;
+        text-decoration: none;
+    }
+    .label-mobile {
+        padding-top: 50px;
+    }
+
+}
